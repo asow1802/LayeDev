@@ -1,0 +1,59 @@
+.contain {
+    position: relative;
+    width: 18%;
+    box-shadow: 0.5px 0.5px 3px #333;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  .contain:hover .mathos{
+    width: 100%;
+    height: aut;
+    transition: .5s ease;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: darken;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .contain:hover .image {
+    opacity: 0.3;
+  }
+  
+  .contain:hover .middle {
+    opacity: 1;
+  }
+  
+  .commande {
+    background-color: #330099;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  #business{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 30rem;
+
+  }

@@ -1,3 +1,9 @@
+#conteneur{
+  scroll-margin: 100px;
+}
+html{
+  scroll-behavior: smooth;
+}
 body {
     margin: 0;
   }
@@ -10,9 +16,10 @@ body {
   
   #navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #330099;
     transition: 0.4s;
     z-index: 100;
+    border-bottom: 2px solid #333;
   }
   
   #navbar a {
@@ -29,17 +36,19 @@ body {
     justify-content: space-between;
     align-items: center;
     gap: 5px;
+    border-top: solid #330099;
+    transition: 1000ms;
 
   }
   
   #navbar a:hover {
-    background-color: #d8dfe3;
-    color: #330099;
+    border-top: solid #d8dfe3;
+    transition: 1000ms;
   }
   
-  #navbar a.active {
-    background-color: #330099;
+  .active {
     color: white;
+    background-color: #330099;
   }
   
   .content {
@@ -54,7 +63,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 30px 10px;
+    padding: 15px 10px;
   }
   
   .sticky + .content {
@@ -152,15 +161,15 @@ body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   #cercle1{
-    border-right: 10px solid #330099;
+    border-right: 400px solid #330099;
 
-    border-radius: 100%;
+    border-radius: 80%;
     margin-left: -500px;
     position: absolute;
     z-index: -10;
   }
-  #cercle1.cerle1{
-    height: 100vh;
+ /* #cercle1.cerle1{
+    height: 200vh;
     width: 60%;
     transition: 3000ms;
   }
@@ -168,18 +177,18 @@ body {
     width: 50%;
     transition: 3000ms;
     height: 70vh;
-  }
+  }*/
   #cercle2{
-    border-left: 10px solid #330099;
+    border-left: 400px solid #330099;
     border-bottom: 10px solid #330099;
-    border-radius: 100%;
+    border-radius: 80%;
     right: 0px;
     position: absolute;
     z-index: -20;
     top: 200px;
   }
   #cercle2.cerl1{
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     transition: 1000ms;
   }

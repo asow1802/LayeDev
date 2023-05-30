@@ -30,6 +30,9 @@
     -ms-transform: translate(-50%, -50%);
     text-align: center;
   }
+  .middle p{
+    color: #fff;
+  }
   
   .contain:hover .image {
     opacity: 0.3;
